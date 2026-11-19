@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses | Campus-Connect</title>
+  <meta name="description" content="Course information for Campus-Connect University, built for accessibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">Campus<span>-Connect</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-open="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+      <div class="prefs" role="group" aria-label="Display settings">
+        <button type="button" id="text-smaller" aria-label="Decrease text size">A−</button>
+        <button type="button" id="text-larger" aria-label="Increase text size">A+</button>
+        <button type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <h1>Course finder</h1>
+    <p class="lead">Search the Semester 1 catalogue. Results update as you type.</p>
+
+    <form class="filters" role="search" aria-label="Course filters" id="filters">
+      <div class="field">
+        <label for="q">Search courses</label>
+        <input type="search" id="q" name="q" placeholder="Code, title or instructor" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="department">Department</label>
+        <select id="department" name="department"><option value="">All departments</option></select>
+      </div>
+      <div class="field">
+        <label for="level">Year level</label>
+        <select id="level" name="level">
+          <option value="">All levels</option>
+          <option value="1">Year 1</option>
+          <option value="2">Year 2</option>
+          <option value="3">Year 3</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="mode">Delivery</label>
+        <select id="mode" name="mode">
+          <option value="">Any delivery</option>
+          <option value="In person">In person</option>
+          <option value="Online">Online</option>
+          <option value="Hybrid">Hybrid</option>
+        </select>
+      </div>
+    </form>
+
+    <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+    <ul class="grid" id="course-list"></ul>
+    <noscript><p class="empty">The course finder needs JavaScript. Contact the registrar for a printable catalogue.</p></noscript>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Campus-Connect is a student project. Course details are sample data. Report an accessibility problem at <a href="mailto:access@campus-connect.example">access@campus-connect.example</a>.</p>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

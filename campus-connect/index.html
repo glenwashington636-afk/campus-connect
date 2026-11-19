@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Campus-Connect</title>
+  <meta name="description" content="Course information for Campus-Connect University, built for accessibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">Campus<span>-Connect</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-open="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+      <div class="prefs" role="group" aria-label="Display settings">
+        <button type="button" id="text-smaller" aria-label="Decrease text size">A−</button>
+        <button type="button" id="text-larger" aria-label="Increase text size">A+</button>
+        <button type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Find the right course, in a format that works for you</h1>
+      <p class="lead">Browse course schedules, prerequisites and delivery modes for the coming term. Every page works with a keyboard, a screen reader and your own text size.</p>
+      <div class="actions">
+        <a class="button primary" href="courses.html">Browse courses</a>
+        <a class="button" href="accessibility.html">Accessibility options</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="start-title">
+      <h2 id="start-title">Start here</h2>
+      <ul class="grid">
+        <li class="panel"><h3>Search by topic</h3><p>Type a course code, title or instructor and the list updates as you type.</p></li>
+        <li class="panel"><h3>Filter by level</h3><p>Narrow results by department, year level and how the course is taught.</p></li>
+        <li class="panel"><h3>Check prerequisites</h3><p>Each course lists what you need to have completed before enrolling.</p></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="dates-title">
+      <h2 id="dates-title">Key dates</h2>
+      <ul class="deadlines">
+        <li><time datetime="2027-01-11">11 Jan 2027</time><span>Course registration opens</span></li>
+        <li><time datetime="2027-01-25">25 Jan 2027</time><span>Semester 1 classes begin</span></li>
+        <li><time datetime="2027-02-08">8 Feb 2027</time><span>Last day to add or drop without penalty</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Campus-Connect is a student project. Course details are sample data. Report an accessibility problem at <a href="mailto:access@campus-connect.example">access@campus-connect.example</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

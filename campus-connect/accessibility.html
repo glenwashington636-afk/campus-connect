@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility | Campus-Connect</title>
+  <meta name="description" content="Course information for Campus-Connect University, built for accessibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html">Campus<span>-Connect</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-open="false">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </nav>
+      <div class="prefs" role="group" aria-label="Display settings">
+        <button type="button" id="text-smaller" aria-label="Decrease text size">A−</button>
+        <button type="button" id="text-larger" aria-label="Increase text size">A+</button>
+        <button type="button" id="theme-toggle" aria-pressed="false">Dark mode</button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <h1>Accessibility</h1>
+    <div class="statement">
+      <p class="lead">Campus-Connect is built to meet WCAG 2.2 level AA. If something does not work for you, tell us and we will fix it.</p>
+
+      <h2>Display settings</h2>
+      <p>Use the controls in the page header. Your choices are remembered on this device.</p>
+      <ul>
+        <li><strong>Text size:</strong> three steps, from default to 136%.</li>
+        <li><strong>Dark mode:</strong> follows your system setting until you change it.</li>
+        <li><strong>Reduced motion:</strong> animations are off when your system asks for it.</li>
+      </ul>
+
+      <h2>Keyboard shortcuts</h2>
+      <ul>
+        <li><kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> move between links and controls.</li>
+        <li><kbd>Enter</kbd> activates links and buttons.</li>
+        <li>The first Tab stop on every page is a link that skips to the main content.</li>
+      </ul>
+
+      <h2>What we built in</h2>
+      <ul>
+        <li>Semantic landmarks: header, navigation, main and footer.</li>
+        <li>Visible focus outlines on every interactive element.</li>
+        <li>Text contrast of at least 4.5:1 in both themes.</li>
+        <li>Form fields with permanent labels.</li>
+        <li>Search results announced to screen readers through a live region.</li>
+        <li>A layout that reflows to a 320px width without sideways scrolling.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:access@campus-connect.example">access@campus-connect.example</a> and describe the page and the problem. We reply within three working days.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Campus-Connect is a student project. Course details are sample data. Report an accessibility problem at <a href="mailto:access@campus-connect.example">access@campus-connect.example</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
